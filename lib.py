@@ -23,13 +23,15 @@ def isPrime(n):
     return True
 
 def isPrimeFast(n):
-    if n == 1:
+    if n <= 1:
         return False
     if n == 2:
         return True
+    if n % 2 == 0:
+        return False
 
+    sq = int(sqrt(n))
     i = 3
-    sq = sqrt(n)
     while i <= sq:
         if n % i == 0:
             return False
