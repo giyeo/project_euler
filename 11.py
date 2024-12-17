@@ -40,9 +40,13 @@ for i in range(17):
     for j in range(20):
         maxx = max(maxx, intGrid[i][j] * intGrid[i + 1][j] * intGrid[i + 2][j] * intGrid[i + 3][j])
 
-#horizontal root on left
+for i in range(17):
+    for j in range(17):
+        #diagonal root on left
+        maxx = max(maxx, intGrid[i][j] * intGrid[i + 1][j + 1] * intGrid[i + 2][j + 2] * intGrid[i + 3][j + 3])
+        #diagnoal root on right
+        maxx = max(maxx, intGrid[i][j + 3] * intGrid[i + 1][j + 2] * intGrid[i + 2][j + 1] * intGrid[i + 3][j])
 
-#horizontal root on right
 
 print(maxx)
 
