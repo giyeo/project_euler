@@ -103,4 +103,17 @@ big_numbers = "\
 53503534226472524250874054075591789781264330331690".split(" ")
 
 #so we need to sum those numbers, there are big, so lets do it in a wise way
-print(big_numbers)
+
+def sumStrings(s1, s2):
+    lenA = len(s1)
+    lenB = len(s2)    
+    carry = "0"
+
+    
+    return str(int(s1[0]) + int(s2[0]))
+
+print(sumStrings("1", "1"))
+print(sumStrings("1", "9"))
+
+    
+        
