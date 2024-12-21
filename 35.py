@@ -13,7 +13,7 @@ def all_rotations_of_given_number(n):
 primeSet = set()
 circularPrimeSet = set()
 
-for i in range(10_000_000):
+for i in range(1_000_000):
     rotations = all_rotations_of_given_number(i)
     for num in rotations:
         if num in primeSet:
